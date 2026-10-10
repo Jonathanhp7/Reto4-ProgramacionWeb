@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora básica | JavaScript</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="contenedor-principal">
+
+        <header class="encabezado">
+            <span class="etiqueta">PROYECTO JAVASCRIPT</span>
+            <h1>Calculadora básica</h1>
+            <p>
+                Una calculadora interactiva desarrollada
+                con HTML, CSS y JavaScript.
+            </p>
+        </header>
+
+        <section class="calculadora" aria-label="Calculadora básica">
+
+            <!-- Encabezado de la calculadora -->
+            <div class="calculadora-header">
+                <div class="marca">
+                    <span class="indicador"></span>
+                    <span>CALCULADORA</span>
+                </div>
+
+                <span class="version">JS / 01</span>
+            </div>
+
+            <!-- Pantalla -->
+            <div class="pantalla" id="pantalla">
+
+                <div class="operacion" id="operacion">
+                    &nbsp;
+                </div>
+
+                <output
+                    class="resultado"
+                    id="resultado"
+                    aria-live="polite"
+                    aria-atomic="true"
+                >0</output>
+
+            </div>
+
+            <!-- Botones -->
+            <div class="teclado">
+
+                <!-- Fila 1 -->
+                <button type="button"
+                        class="boton boton-funcion"
+                        data-accion="limpiar">
+                    AC
+                </button>
+
+                <button type="button"
+                        class="boton boton-funcion"
+                        data-accion="signo">
+                    ±
+                </button>
+
+                <button type="button"
+                        class="boton boton-funcion"
+                        data-accion="porcentaje">
+                    %
+                </button>
+
+                <button type="button"
+                        class="boton boton-operador"
+                        data-operador="/">
+                    ÷
+                </button>
+
+                <!-- Fila 2 -->
+                <button type="button" class="boton" data-numero="7">7</button>
+                <button type="button" class="boton" data-numero="8">8</button>
+                <button type="button" class="boton" data-numero="9">9</button>
+
+                <button type="button"
+                        class="boton boton-operador"
+                        data-operador="*">
+                    ×
+                </button>
+
+                <!-- Fila 3 -->
+                <button type="button" class="boton" data-numero="4">4</button>
+                <button type="button" class="boton" data-numero="5">5</button>
+                <button type="button" class="boton" data-numero="6">6</button>
+
+                <button type="button"
+                        class="boton boton-operador"
+                        data-operador="-">
+                    −
+                </button>
+
+                <!-- Fila 4 -->
+                <button type="button" class="boton" data-numero="1">1</button>
+                <button type="button" class="boton" data-numero="2">2</button>
+                <button type="button" class="boton" data-numero="3">3</button>
+
+                <button type="button"
+                        class="boton boton-operador"
+                        data-operador="+">
+                    +
+                </button>
+
+                <!-- Fila 5 -->
+                <button type="button"
+                        class="boton boton-funcion"
+                        data-accion="borrar"
+                        aria-label="Borrar último dígito">
+                    ⌫
+                </button>
+
+                <button type="button" class="boton" data-numero="0">0</button>
+
+                <button type="button"
+                        class="boton"
+                        data-accion="decimal">
+                    .
+                </button>
+
+                <button type="button"
+                        class="boton boton-igual"
+                        data-accion="igual">
+                    =
+                </button>
+
+            </div>
+
+            <!-- Información inferior -->
+            <footer class="calculadora-footer">
+                <span>OPERACIONES EN TIEMPO REAL</span>
+                <span class="estado">
+                    <span class="punto-estado"></span>
+                    LISTO
+                </span>
+            </footer>
+
+        </section>
+
+        <p class="nota">
+            También puedes utilizar el teclado de tu computadora.
+        </p>
+
+    </main>
+
+</body>
+</html>
